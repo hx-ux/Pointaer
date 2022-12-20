@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\ofApp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Persist.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofApp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VideoFile.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxAbletonLink\src\ofxAbletonLink.cpp">
+      <Filter>addons\ofxAbletonLink\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxCsv\src\ofxCsv.cpp">
+      <Filter>addons\ofxCsv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxCsv\src\ofxCsvRow.cpp">
+      <Filter>addons\ofxCsv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxHapPlayer\src\ofxHapPlayer.cpp">
+      <Filter>addons\ofxHapPlayer\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxHapPlayer\libs\hap\src\hap.c">
+      <Filter>addons\ofxHapPlayer\libs\hap\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxHapPlayer\libs\ofxHap\src\AudioDecoder.cpp">
+      <Filter>addons\ofxHapPlayer\libs\ofxHap\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxHapPlayer\libs\ofxHap\src\AudioParameters.cpp">
+      <Filter>addons\ofxHapPlayer\libs\ofxHap\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxHapPlayer\libs\ofxHap\src\AudioResampler.cpp">
+      <Filter>addons\ofxHapPlayer\libs\ofxHap\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxHapPlayer\libs\ofxHap\src\AudioThread.cpp">
+      <Filter>addons\ofxHapPlayer\libs\ofxHap\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxHapPlayer\libs\ofxHap\src\Clock.cpp">
+      <Filter>addons\ofxHapPlayer\libs\ofxHap\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxHapPlayer\libs\ofxHap\src\Demuxer.cpp">
+      <Filter>addons\ofxHapPlayer\libs\ofxHap\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxHapPlayer\libs\ofxHap\src\MovieTime.cpp">
+      <Filter>addons\ofxHapPlayer\libs\ofxHap\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxHapPlayer\libs\ofxHap\src\PacketCache.cpp">
+      <Filter>addons\ofxHapPlayer\libs\ofxHap\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxHapPlayer\libs\ofxHap\src\RingBuffer.cpp">
+      <Filter>addons\ofxHapPlayer\libs\ofxHap\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxHapPlayer\libs\ofxHap\src\TimeRangeSet.cpp">
+      <Filter>addons\ofxHapPlayer\libs\ofxHap\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxImGui\src\BaseEngine.cpp">
+      <Filter>addons\ofxImGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxImGui\src\DefaultTheme.cpp">
+      <Filter>addons\ofxImGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxImGui\src\EngineGLFW.cpp">
+      <Filter>addons\ofxImGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxImGui\src\EngineOpenGLES.cpp">
+      <Filter>addons\ofxImGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxImGui\src\EngineVk.cpp">
+      <Filter>addons\ofxImGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxImGui\src\Gui.cpp">
+      <Filter>addons\ofxImGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxImGui\src\ImHelpers.cpp">
+      <Filter>addons\ofxImGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxImGui\src\ofxImGuiLoggerChannel.cpp">
+      <Filter>addons\ofxImGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxImGui\libs\imgui\src\imgui.cpp">
+      <Filter>addons\ofxImGui\libs\imgui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxImGui\libs\imgui\src\imgui_demo.cpp">
+      <Filter>addons\ofxImGui\libs\imgui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxImGui\libs\imgui\src\imgui_draw.cpp">
+      <Filter>addons\ofxImGui\libs\imgui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxImGui\libs\imgui\src\imgui_widgets.cpp">
+      <Filter>addons\ofxImGui\libs\imgui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxNetwork\src\ofxNetworkUtils.cpp">
+      <Filter>addons\ofxNetwork\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxNetwork\src\ofxTCPClient.cpp">
+      <Filter>addons\ofxNetwork\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxNetwork\src\ofxTCPManager.cpp">
+      <Filter>addons\ofxNetwork\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxNetwork\src\ofxTCPServer.cpp">
+      <Filter>addons\ofxNetwork\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxNetwork\src\ofxUDPManager.cpp">
+      <Filter>addons\ofxNetwork\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons">
+      <UniqueIdentifier>{71834F65-F3A9-211E-73B8-DC85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxAbletonLink">
+      <UniqueIdentifier>{A484E538-7342-9CE2-4235-AF3D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxAbletonLink\src">
+      <UniqueIdentifier>{796511B9-59B6-6B02-F4B3-CFA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxCsv">
+      <UniqueIdentifier>{7D309272-D72D-88B2-EE38-CF23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxCsv\src">
+      <UniqueIdentifier>{7C4B1010-50E8-44FD-FA0B-A4E8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxHapPlayer">
+      <UniqueIdentifier>{3ABF0718-7EF0-C616-645A-BC48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxHapPlayer\src">
+      <UniqueIdentifier>{B922E112-1099-333C-0CFD-9815}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxHapPlayer\libs">
+      <UniqueIdentifier>{0B971793-EF6D-AFDC-9CC8-D438}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxHapPlayer\libs\hap">
+      <UniqueIdentifier>{9657ED59-9D5A-DDF5-E840-7BB3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxHapPlayer\libs\hap\src">
+      <UniqueIdentifier>{49B16A97-1FCF-BC4F-A074-82BC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxHapPlayer\libs\ofxHap">
+      <UniqueIdentifier>{81854E06-4A3C-EE06-CE8B-A33D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxHapPlayer\libs\ofxHap\include">
+      <UniqueIdentifier>{EB4E97F5-97E8-2DB8-16D6-DBB9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxHapPlayer\libs\ofxHap\include\ofxHap">
+      <UniqueIdentifier>{0AC17D0E-3614-0010-4FC7-24CF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxHapPlayer\libs\ofxHap\src">
+      <UniqueIdentifier>{E1E4E96B-D25B-812B-6CA6-A094}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxImGui">
+      <UniqueIdentifier>{0CD6A942-69FF-3BAA-3AF1-ADD1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxImGui\src">
+      <UniqueIdentifier>{18028A43-13D3-1DD5-471A-BE87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxImGui\libs">
+      <UniqueIdentifier>{BE2F957E-7DA7-055C-DC70-3070}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxImGui\libs\imgui">
+      <UniqueIdentifier>{296AD70B-2F2E-1462-9E7C-6030}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxImGui\libs\imgui\src">
+      <UniqueIdentifier>{5962BF19-1468-EB82-01C0-2E72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxNetwork">
+      <UniqueIdentifier>{01A15744-29A6-108D-08E9-83A7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxNetwork\src">
+      <UniqueIdentifier>{3D1C10C7-8F35-E796-9C70-F5F3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ofApp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Persist.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofApp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VideoFile.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxAbletonLink\src\ofxAbletonLink.h">
+      <Filter>addons\ofxAbletonLink\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxCsv\src\ofxCsv.h">
+      <Filter>addons\ofxCsv\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxCsv\src\ofxCsvRow.h">
+      <Filter>addons\ofxCsv\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxHapPlayer\src\ofxHapPlayer.h">
+      <Filter>addons\ofxHapPlayer\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxHapPlayer\libs\hap\src\hap.h">
+      <Filter>addons\ofxHapPlayer\libs\hap\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxHapPlayer\libs\ofxHap\include\ofxHap\AudioDecoder.h">
+      <Filter>addons\ofxHapPlayer\libs\ofxHap\include\ofxHap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxHapPlayer\libs\ofxHap\include\ofxHap\AudioParameters.h">
+      <Filter>addons\ofxHapPlayer\libs\ofxHap\include\ofxHap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxHapPlayer\libs\ofxHap\include\ofxHap\AudioResampler.h">
+      <Filter>addons\ofxHapPlayer\libs\ofxHap\include\ofxHap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxHapPlayer\libs\ofxHap\include\ofxHap\AudioThread.h">
+      <Filter>addons\ofxHapPlayer\libs\ofxHap\include\ofxHap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxHapPlayer\libs\ofxHap\include\ofxHap\Clock.h">
+      <Filter>addons\ofxHapPlayer\libs\ofxHap\include\ofxHap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxHapPlayer\libs\ofxHap\include\ofxHap\Common.h">
+      <Filter>addons\ofxHapPlayer\libs\ofxHap\include\ofxHap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxHapPlayer\libs\ofxHap\include\ofxHap\Demuxer.h">
+      <Filter>addons\ofxHapPlayer\libs\ofxHap\include\ofxHap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxHapPlayer\libs\ofxHap\include\ofxHap\ErrorReceiving.h">
+      <Filter>addons\ofxHapPlayer\libs\ofxHap\include\ofxHap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxHapPlayer\libs\ofxHap\include\ofxHap\MovieTime.h">
+      <Filter>addons\ofxHapPlayer\libs\ofxHap\include\ofxHap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxHapPlayer\libs\ofxHap\include\ofxHap\PacketCache.h">
+      <Filter>addons\ofxHapPlayer\libs\ofxHap\include\ofxHap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxHapPlayer\libs\ofxHap\include\ofxHap\RingBuffer.h">
+      <Filter>addons\ofxHapPlayer\libs\ofxHap\include\ofxHap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxHapPlayer\libs\ofxHap\include\ofxHap\TimeRangeSet.h">
+      <Filter>addons\ofxHapPlayer\libs\ofxHap\include\ofxHap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxImGui\src\BaseEngine.h">
+      <Filter>addons\ofxImGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxImGui\src\BaseTheme.h">
+      <Filter>addons\ofxImGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxImGui\src\DefaultTheme.h">
+      <Filter>addons\ofxImGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxImGui\src\EngineGLFW.h">
+      <Filter>addons\ofxImGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxImGui\src\EngineOpenGLES.h">
+      <Filter>addons\ofxImGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxImGui\src\EngineVk.h">
+      <Filter>addons\ofxImGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxImGui\src\Gui.h">
+      <Filter>addons\ofxImGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxImGui\src\imconfig.h">
+      <Filter>addons\ofxImGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxImGui\src\ImHelpers.h">
+      <Filter>addons\ofxImGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxImGui\src\ofxImGui.h">
+      <Filter>addons\ofxImGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxImGui\src\ofxImGuiLoggerChannel.h">
+      <Filter>addons\ofxImGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxImGui\libs\imgui\src\imgui.h">
+      <Filter>addons\ofxImGui\libs\imgui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxImGui\libs\imgui\src\imgui_internal.h">
+      <Filter>addons\ofxImGui\libs\imgui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxImGui\libs\imgui\src\imstb_rectpack.h">
+      <Filter>addons\ofxImGui\libs\imgui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxImGui\libs\imgui\src\imstb_textedit.h">
+      <Filter>addons\ofxImGui\libs\imgui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxImGui\libs\imgui\src\imstb_truetype.h">
+      <Filter>addons\ofxImGui\libs\imgui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxNetwork\src\ofxNetwork.h">
+      <Filter>addons\ofxNetwork\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxNetwork\src\ofxNetworkUtils.h">
+      <Filter>addons\ofxNetwork\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxNetwork\src\ofxTCPClient.h">
+      <Filter>addons\ofxNetwork\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxNetwork\src\ofxTCPManager.h">
+      <Filter>addons\ofxNetwork\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxNetwork\src\ofxTCPServer.h">
+      <Filter>addons\ofxNetwork\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxNetwork\src\ofxTCPSettings.h">
+      <Filter>addons\ofxNetwork\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxNetwork\src\ofxUDPManager.h">
+      <Filter>addons\ofxNetwork\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxNetwork\src\ofxUDPSettings.h">
+      <Filter>addons\ofxNetwork\src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="icon.rc" />
+  </ItemGroup>
+</Project>
