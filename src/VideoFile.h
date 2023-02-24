@@ -17,7 +17,7 @@ public:
 	};
 
 	string videoPath;
-	bool isValidVideo = false;
+	bool isValidVideo = true;
 	bool checkVideoFile(string v);
 	float getSingleLoopPoint(int pos);
 	vector<float> getallLoopPoints();

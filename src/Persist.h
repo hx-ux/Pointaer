@@ -5,15 +5,22 @@
 #include "VideoFile.h"
 
 
-// NOT YET IMPELMENTED !!!
-
 class Persist {
 public:
-	Persist();
-	void setup();
-	void saveCSV();
+
+	Persist()
+	{
+	}
+		
+	void saveToCSV(VideoFile f);
+	VideoFile loadToCsv(string filepath);
+	
+	static string openFileDialog();
+
+
 
 private:
+	ofXml xml;
 
 	//to csv
 	string loopPointsToString();

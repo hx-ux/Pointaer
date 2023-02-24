@@ -10,3 +10,33 @@ int main() {
 	// pass in width and height too:
 	ofRunApp(new ofApp());
 }
+
+// to deactivate the audio 
+
+//
+//void ofxHapPlayer::AudioOutput::start()
+//{
+//	// TODO fixed mute the audio
+//	//if (!_started)
+//	//{
+//	//	ofSoundStreamSettings settings;
+//	//	settings.numInputChannels = 0;
+//	//	settings.numOutputChannels = _channels;
+//	//	settings.sampleRate = _sampleRate;
+//	//	settings.setOutListener(this);
+//
+//	//	// TODO: best values for last 2 params?
+//	//	settings.bufferSize = 128;
+//	//	settings.numBuffers = 2;
+//
+//	//	_started = _soundStream.setup(settings);
+//	//	if (!_started)
+//	//	{
+//	//		ofLogError("ofxHapPlayer", "Error starting audio playback.");
+//	//	}
+//	//}
+//	//else
+//	//{
+//	//	_soundStream.start();
+//	//}
+//}

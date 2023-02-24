@@ -29,6 +29,7 @@
  //#include "VideoFile.cpp"
 #include "ofApp.h"
 #include "Persist.h"
+#include "ofxImGui.h"
 
 //
 
@@ -37,35 +38,32 @@
 #define BarHeight 40
 
 
-std::vector <VideoFile> videoList;
-VideoFile defaultVideo = VideoFile("C:\\Users\\Jakob\\Videos\\hap.mov");
-
+// default fileObject
+VideoFile defaultVideo = VideoFile("");
 int currVideoStackPos = 0;
 
 //--------------------------------------------------------------
 void ofApp::setup()
 {
-	defaultVideo.isValidVideo = true;
-	videoList.push_back(defaultVideo);
-	
+	defaultVideo.isValidVideo = false;
 
-	barColor = ofColor::red;
-
-	// generate default loopPoints
-	videoList[currentLoopPoint].DefaultLoopPoints();
-
-	// Limit drawing to the monitors rate
-	ofSetVerticalSync(true);
-	ofBackground(0);
-
-	// load video
-	player.load(videoList[currVideoStackPos].videoPath);
+	// player Stuff
+	//player.stopAudio();
 	player.setPixelFormat(ofPixelFormat::OF_PIXELS_GRAY);
-	player.play();
 	player.setVolume(0);
 	player.setSpeed(1.0);
 	player.setLoopState(OF_LOOP_NORMAL);
+	// generate default loopPoints
+	defaultVideo.DefaultLoopPoints();
+
+	// of stuff
+	ofSetVerticalSync(true);
+	ofSetVerticalSync(true);
+	ofBackground(0);
+
+	// hap player stuff
 	inScrub = false;
+	barColor = ofColor::red;
 
 	// Setup Ableton Link
 	abletonLinkInstance.setup(120);
@@ -82,7 +80,7 @@ void ofApp::update()
 	{
 		if (abletonLinkNewBeat != abeltonLinkOldBeat)
 		{
-			setKeyFrame(videoList[currVideoStackPos].getallLoopPoints(), abletonLinkNewBeat);
+			setKeyFrame(defaultVideo.getallLoopPoints(), abletonLinkNewBeat);
 			abeltonLinkOldBeat = abletonLinkNewBeat;
 		}
 	}
@@ -92,7 +90,7 @@ void ofApp::update()
 void ofApp::draw()
 {
 
-	if (videoList[currVideoStackPos].isValidVideo)
+	if (defaultVideo.isValidVideo)
 	{
 
 		if (player.isLoaded())
@@ -123,12 +121,12 @@ void ofApp::draw()
 		}
 		else
 		{
-			ofDrawBitmapStringHighlight("Movie is loading..." + videoList[currVideoStackPos].getVideoname(), 20, 20);
+			ofDrawBitmapStringHighlight("Movie is loading..." + defaultVideo.getVideoname(), 20, 20);
 		}
 	}
 	else
 	{
-		ofDrawBitmapStringHighlight("MOVIE ERROR",20,20);
+		ofDrawBitmapStringHighlight("Please press o to load or drag an video",20,20);
 	}
 }
 
@@ -215,14 +213,29 @@ void ofApp::keyPressed(int key)
 	else if (key == 's')
 	{
 		// save / replace current loop point
-		videoList[currVideoStackPos].setSingleLoopPoints(currentLoopPoint, player.getPosition());
+		defaultVideo.setSingleLoopPoints(currentLoopPoint, player.getPosition());
 		ofLog(OF_LOG_NOTICE, "set new keyframe at %1 " , player.getPosition());
 	}
 
-	else if (key == 'c')
+	else if (key == 's')
 	{
-		
+		// TODO Implemnt save function
 	}
+	else if (key == 'o')
+	{
+		ofFileDialogResult result = ofSystemLoadDialog("Load file");
+		if (result.bSuccess) {
+			string path = result.getPath();
+			defaultVideo=VideoFile(path);
+			defaultVideo.isValidVideo = true;
+
+			player.load(defaultVideo.videoPath);
+			player.play();
+			lastMovement = ofGetSystemTimeMillis();
+			defaultVideo.DefaultLoopPoints();
+		}
+	}
+
 }
 
 //--------------------------------------------------------------
@@ -334,7 +347,14 @@ void ofApp::setKeyFrame(vector<float> frames, int pos)
 //--------------------------------------------------------------
 void ofApp::dragEvent(ofDragInfo dragInfo)
 {
-	
+
+		vector< string > fileList = dragInfo.files;
+		defaultVideo = VideoFile(fileList[0]);
+		defaultVideo.isValidVideo = true;
+		player.load(defaultVideo.videoPath);
+		player.play();
+		lastMovement = ofGetSystemTimeMillis();
+		defaultVideo.DefaultLoopPoints();
 }
 
 ofRectangle ofApp::getBarRectangleFull() const
@@ -357,13 +377,13 @@ void ofApp::drawLoopPoint(int curFrame)
 
 	int counter = 1;
 
-	for (int i = 0; i < videoList[currVideoStackPos].getallLoopPoints().size(); i++)
+	for (int i = 0; i < defaultVideo.getallLoopPoints().size(); i++)
 	{
 		ofFill();
-		counter == currentLoopPoint + 1 ? ofSetColor(ofColor::wheat) : ofSetColor(ofColor::yellow);
+		counter == currentLoopPoint + 1 ? ofSetColor(ofColor::white) : ofSetColor(ofColor::yellow);
 
-		ofDrawBitmapString(ofToString(counter), (pX * videoList[currVideoStackPos].getallLoopPoints()[i]) + pWidth * 4, pY - 5);
-		ofDrawRectangle((pX * videoList[currVideoStackPos].getallLoopPoints()[i]) + pWidth * 4, pY, pWidth, pHeight);
+		ofDrawBitmapString(ofToString(counter), (pX * defaultVideo.getallLoopPoints()[i]) + pWidth * 4, pY - 5);
+		ofDrawRectangle((pX * defaultVideo.getallLoopPoints()[i]) + pWidth * 4, pY, pWidth, pHeight);
 		counter++;
 	}
 }
@@ -376,8 +396,8 @@ void ofApp::drawEditModeInfo()
 	string mode = (abletonLinkActive) ? "ABLETON SYNC " : "EDIT MODE";
 	ofDrawBitmapString(mode, 20, 40);
 	ofDrawBitmapString("Current POINT " + ofToString(currentLoopPoint + 1), 20, 60);
-	ofDrawBitmapString("Time Postiton of point  " + ofToString(videoList[currVideoStackPos].getSingleLoopPoint(currentLoopPoint)), 20, 80);
-	ofDrawBitmapString("Video name  " + videoList[currVideoStackPos].getVideoname(), 20, 90);
+	ofDrawBitmapString("Time Postiton of point  " + ofToString(defaultVideo.getSingleLoopPoint(currentLoopPoint)), 20, 80);
+	ofDrawBitmapString("Video name  " + defaultVideo.getVideoname(), 20, 90);
 	// TODO Get fps
 
 	// ableton stuff
@@ -399,7 +419,7 @@ void ofApp::abletonLinkSetup()
 {
 	abletonLinkInstance.setup(120);
 	ofSetBackgroundColor(0, 0, 0);
-	ofSetVerticalSync(true);
+	
 }
 
 void ofApp::drawTimeLine()
@@ -421,5 +441,5 @@ void ofApp::drawTimeLine()
 void ofApp::setTimeLineLoopPoint(int position)
 {
 	currentLoopPoint = position;
-	player.setPosition(videoList[currVideoStackPos].getSingleLoopPoint(position));
+	player.setPosition(defaultVideo.getSingleLoopPoint(position));
 }

@@ -1,11 +1,9 @@
 #include "VideoFile.h"
-#include "Csv.h"
+//#include "Csv.h"
 
 bool VideoFile::checkVideoFile(string v)
 {
-	// TODO impelement
-
-	return true;
+	return isValidVideo;
 }
 
 float VideoFile::getSingleLoopPoint(int pos)
